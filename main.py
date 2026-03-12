@@ -16,7 +16,6 @@ dp = Dispatcher()
 async def command_start_handler(message: Message) -> None:
     await message.answer(f'Приветствую Амиго 🤘\n\nЕсли ты хочешь поддержать меня, просто сосредоточься на себе.\n\nЕсли тебе хочется поиграть, кликни по кнопке GO в нижнем левом углу.')
 
-
 @dp.message()
 async def echo_handler(message: Message) -> None:
     await message.answer("Пиши только текст")
